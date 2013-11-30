@@ -1,9 +1,16 @@
+#! /usr/bin/python
+
+# this code takes any input as full name and treats first word as 
+# first name and last word as last name and processes those two words thereafter.
+# I thought accounting middle name may change the code out of 
+# the scope of specification.
+
 name = raw_input("enter your full name ")
 
 name = name.title()
 splitted = name.split()
 firstName = splitted[0]
-lastName = splitted[1]
+lastName = splitted[-1]
 lenfName = len(firstName)
 lenlName = len(lastName)
 length = lenfName + lenlName
